@@ -132,9 +132,15 @@
           </div>
         </div>
       </div>
+      <footer class="text-center">
+        <span id="fullYear"></span> &copy; Developed By Jorge Lemos
+      </footer>
     </main>
   </body>
   <script>
+    let getFullYear = new Date().getFullYear();
+
+    document.getElementById('fullYear').innerText = getFullYear;
     lucide.createIcons();
   </script>
 </html>

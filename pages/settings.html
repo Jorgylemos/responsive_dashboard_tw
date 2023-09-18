@@ -86,9 +86,15 @@
           class="space-y-4 ml-12 md:ml-44 min-h-full flex flex-col justify-center items-center w-full"
         ></div>
       </div>
+      <footer class="text-center">
+        <span id="fullYear"></span> &copy; Developed By Jorge Lemos
+      </footer>
     </main>
   </body>
   <script>
+    let getFullYear = new Date().getFullYear();
+
+    document.getElementById('fullYear').innerText = getFullYear;
     lucide.createIcons();
   </script>
 </html>

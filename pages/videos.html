@@ -99,31 +99,56 @@
         >
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-6 mt-6">
             <div
-              class="flex items-center justify-center hover:scale-105 h-16 w-20 md:w-56 md:h-32 bg-gray-300 hover:bg-gray-400 transition-all rounded"
+              class="relative flex items-center justify-center group hover:scale-105 h-16 w-20 md:w-56 md:h-32 transition-all rounded overflow-auto"
             >
+              <img
+                class="absolute w-full h-full object-cover z-0"
+                src="https://th.bing.com/th/id/OIP.kGx7nYK-oTrjgNeNPVpe1AHaEK?pid=ImgDet&rs=1"
+                alt=""
+              />
+              <div
+                class="absolute w-full h-full group-hover:bg-gray-400/30"
+              ></div>
               <a
-                href="videoPage.html"
-                class="border-2 border-black/20 hover:border-black/40 rounded-full p-2.5 hover:scale-110 transition-all"
+                href="../VideoPages/videoPage.html"
+                class="active:translate-y-1 active:translate-x-1 border-2 border-black/20 hover:border-black/40 group-hover:bg-gray-400/30 rounded-full p-2.5 hover:scale-110 transition-all z-10"
+              >
+                <li data-lucide="play-circle" class="w-10 h-10 text-black"></li>
+              </a>
+            </div>
+
+            <div
+              class="relative flex items-center justify-center group hover:scale-105 h-16 w-20 md:w-56 md:h-32 transition-all rounded overflow-auto"
+            >
+              <img
+                class="absolute w-full h-full object-cover z-0"
+                src="https://www.boomermagazine.com/wp-content/uploads/2021/06/cat-love-bites-Zsv3207-Dreamstime-800x450.jpg"
+                alt=""
+              />
+              <div
+                class="absolute w-full h-full group-hover:bg-gray-400/30"
+              ></div>
+              <a
+                href="../VideoPages/videoPage1.html"
+                class="active:translate-y-1 active:translate-x-1 border-2 border-black/20 hover:border-black/40 group-hover:bg-gray-400/30 rounded-full p-2.5 hover:scale-110 transition-all z-10"
               >
                 <li data-lucide="play-circle" class="w-10 h-10 text-black"></li>
               </a>
             </div>
             <div
-              class="flex items-center justify-center hover:scale-105 h-16 w-20 md:w-56 md:h-32 bg-gray-300 hover:bg-gray-400 transition-all rounded"
+              class="relative flex items-center justify-center group hover:scale-105 h-16 w-20 md:w-56 md:h-32 transition-all rounded overflow-auto"
             >
+              <img
+                class="absolute w-full h-full object-cover z-0"
+                src="https://th.bing.com/th/id/R.36565057f78ca57c15a9e578feed5b56?rik=Bgg8v29qpUTM8A&pid=ImgRaw&r=0"
+                alt=""
+              />
+              <div
+                class="absolute w-full h-full group-hover:bg-gray-400/30"
+              ></div>
               <a
-                href="videoPage.html"
-                class="border-2 border-black/20 hover:border-black/40 rounded-full p-2.5 hover:scale-110 transition-all"
-              >
-                <li data-lucide="play-circle" class="w-10 h-10 text-black"></li>
-              </a>
-            </div>
-            <div
-              class="flex items-center justify-center hover:scale-105 h-16 w-20 md:w-56 md:h-32 bg-gray-300 hover:bg-gray-400 transition-all rounded"
-            >
-              <a
-                href="videoPage.html"
-                class="border-2 border-black/20 hover:border-black/40 rounded-full p-2.5 hover:scale-110 transition-all"
+                href="../VideoPages/videoPage2.html"
+                class="active:translate-y-1 active:translate-x-1 border-2 border-black/20 hover:border-black/40 group-hover:bg-gray-400/30 rounded-full p-2.5 hover:scale-110 transition-all z-10"
               >
                 <li data-lucide="play-circle" class="w-10 h-10 text-black"></li>
               </a>
@@ -131,9 +156,15 @@
           </div>
         </div>
       </div>
+      <footer class="text-center">
+        <span id="fullYear"></span> &copy; Developed By Jorge Lemos
+      </footer>
     </main>
   </body>
   <script>
+    let getFullYear = new Date().getFullYear();
+
+    document.getElementById('fullYear').innerText = getFullYear;
     lucide.createIcons();
   </script>
 </html>
