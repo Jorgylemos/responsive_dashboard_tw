@@ -10,3 +10,6 @@
 </div>
 
 <a href="https://codepen.io/benjipott/pen/JELELN" target="_blank">Netflix VideoJS Skin</a>
+
+<h2>Watch demonstration</h2>
+<a href="https://jorgylemos.github.io/responsive_dashboard_tw/" target="_blank">Watch demo</a>
