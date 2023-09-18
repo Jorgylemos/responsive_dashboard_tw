@@ -1,4 +1,12 @@
 <h1>Dashboard Responsive Project</h1>
+<div style="display: flex; justify-content: justify-center; gap: 6px;">
+    <a href="https://tailwindcss.com/" target="_blank">
+        <img style="width: 40px;" src="https://iconape.com/wp-content/files/an/351546/png/tailwind-css-logo.png">
+    </a>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+        <img style="width: 35px;" src="https://th.bing.com/th/id/R.5d6cd40c005b34535bc97755c8e54d24?rik=Mzx6XZR99i8n5Q&pid=ImgRaw&r=0">
+    </a>
+</div>
 <h2>Project created by me, other files taken from the internet.</h2>
 
 <div>
