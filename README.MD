@@ -9,6 +9,10 @@
 </div>
 <h2>Project created by me, other files taken from the internet.</h2>
 
+<small style="color: red;">Yes, I know about the problem with the buttons on the video pages when it is switched to mobile.
+Unfortunately, the CSS for styling VideoJS is affecting the other elements.
+I'll leave it as a "challenge" for resolution.</small>
+
 <div>
     <h2>External Files</h2>
     <ul>
