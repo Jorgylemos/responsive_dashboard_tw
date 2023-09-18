@@ -101,7 +101,7 @@
         >
           <video
             id="my-video"
-            class="video-js w-10/12 md:w-5/12"
+            class="vjs-default-skin video-js w-10/12 md:w-5/12"
             controls
             preload="auto"
             width="640"
@@ -109,7 +109,7 @@
             poster="https://th.bing.com/th/id/R.36565057f78ca57c15a9e578feed5b56?rik=Bgg8v29qpUTM8A&pid=ImgRaw&r=0"
             data-setup="{}"
           >
-            <source src="../public/video2.mp4" type="video/mp4" />
+            <source src="../public/videos/video2.mp4" type="video/mp4" />
             <p class="vjs-no-js">
               To view this video please enable JavaScript, and consider
               upgrading to a web browser that
@@ -126,11 +126,29 @@
     </main>
   </body>
   <script>
-    lucide.createIcons();
-
     let getFullYear = new Date().getFullYear();
 
     document.getElementById('fullYear').innerText = getFullYear;
+
+    $(function () {
+      var $refreshButton = $('#refresh');
+      var $results = $('#css_result');
+
+      function refresh() {
+        var css = $('style.cp-pen-styles').text();
+        $results.html(css);
+      }
+
+      refresh();
+      $refreshButton.click(refresh);
+
+      // Select all the contents when clicked
+      $results.click(function () {
+        $(this).select();
+      });
+    });
+
+    lucide.createIcons();
   </script>
   <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 </html>

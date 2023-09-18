@@ -10,6 +10,8 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
     <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../public/styles/video.css" />
   </head>
   <body>
     <main class="min-h-screen flex flex-col text-white bg-gray-800">
@@ -101,7 +103,7 @@
         >
           <video
             id="my-video"
-            class="video-js w-10/12 md:w-5/12"
+            class="vjs-default-skin video-js w-10/12 md:w-5/12"
             controls
             preload="auto"
             width="640"
@@ -109,7 +111,7 @@
             poster="https://www.boomermagazine.com/wp-content/uploads/2021/06/cat-love-bites-Zsv3207-Dreamstime-800x450.jpg"
             data-setup="{}"
           >
-            <source src="../public/video1.mp4" type="video/mp4" />
+            <source src="../public/videos/video1.mp4" type="video/mp4" />
             <p class="vjs-no-js">
               To view this video please enable JavaScript, and consider
               upgrading to a web browser that
@@ -126,11 +128,29 @@
     </main>
   </body>
   <script>
-    lucide.createIcons();
-
     let getFullYear = new Date().getFullYear();
 
     document.getElementById('fullYear').innerText = getFullYear;
+
+    $(function () {
+      var $refreshButton = $('#refresh');
+      var $results = $('#css_result');
+
+      function refresh() {
+        var css = $('style.cp-pen-styles').text();
+        $results.html(css);
+      }
+
+      refresh();
+      $refreshButton.click(refresh);
+
+      // Select all the contents when clicked
+      $results.click(function () {
+        $(this).select();
+      });
+    });
+
+    lucide.createIcons();
   </script>
   <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 </html>
