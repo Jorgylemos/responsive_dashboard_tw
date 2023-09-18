@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </head>
+  <body>
+    <main class="min-h-screen flex flex-col text-white bg-gray-800">
+      <div class="flex-1 flex">
+        <aside class="fixed min-h-full w-12 md:w-44 bg-gray-900 flex flex-col">
+          <div
+            class="flex items-center gap-2 justify-center mt-2 md:mt-5 bg-gray-950/20 md:hover:bg-gray-700 md:p-1 md:mx-3 rounded cursor-pointer"
+          >
+            <img
+              src="https://picsum.photos/200"
+              class="rounded-full w-9 md:w-10 flex"
+              alt=""
+            />
+            <div class="md:flex flex-col hidden">
+              <h1>John Doe</h1>
+              <p class="text-xs">@johndoe</p>
+            </div>
+          </div>
+          <nav
+            class="flex-1 flex flex-col justify-center items-center md:justify-start md:items-start md:p-3 gap-4"
+          >
+            <a
+              class="relative group gap-2 flex items-center p-1.5 bg-gray-950/60 hover:bg-gray-700 md:w-full md:px-2 md:py-1.5 rounded-full md:hover:rounded-full"
+              href="../index.html"
+              ><span><i data-lucide="home" class="stroke-1"></i></span
+              ><span class="hidden md:block font-light">Home</span
+              ><span
+                class="hidden md:group-hover:block rounded absolute w-4 h-4 bg-white right-3 rotate-45"
+              ></span>
+            </a>
+            <a
+              class="relative group gap-2 flex items-center p-1.5 bg-gray-950/60 hover:bg-gray-700 md:w-full md:px-2 md:py-1.5 rounded-full md:hover:rounded-full"
+              href="profile.html"
+              ><span><i data-lucide="user-circle" class="stroke-1"></i></span
+              ><span class="hidden md:block font-light">Profile</span
+              ><span
+                class="hidden md:group-hover:block rounded absolute w-4 h-4 bg-white right-3 rotate-45"
+              ></span
+            ></a>
+            <a
+              class="relative group gap-2 flex items-center p-1.5 bg-gray-950/60 hover:bg-gray-700 md:w-full md:px-2 md:py-1.5 rounded-full md:hover:rounded-full"
+              href="videos.html"
+              ><span><i data-lucide="video" class="stroke-1"></i></span
+              ><span class="hidden md:block font-light">Videos</span
+              ><span
+                class="hidden md:group-hover:block rounded absolute w-4 h-4 bg-white right-3 rotate-45"
+              ></span
+            ></a>
+            <a
+              class="relative group gap-2 flex items-center p-1.5 bg-gray-950/60 hover:bg-gray-700 md:w-full md:px-2 md:py-1.5 rounded-full md:hover:rounded-full"
+              href="settings.html"
+              ><span><i data-lucide="settings" class="stroke-1"></i></span
+              ><span class="hidden md:block font-light">Settings</span
+              ><span
+                class="hidden md:group-hover:block rounded absolute w-4 h-4 bg-white right-3 rotate-45"
+              ></span
+            ></a>
+
+            <a
+              href="#"
+              class="md:hidden bg-gray-950/60 hover:bg-gray-700 rounded-full p-1.5"
+            >
+              <span>
+                <li data-lucide="search"></li>
+              </span>
+            </a>
+
+            <div class="flex items-center">
+              <input
+                type="text"
+                class="relative w-36 hidden rounded-md bg-gray-800 md:block px-2"
+                placeholder="Search by videos..."
+              />
+              <span class="absolute right-6 bottom-[16.3rem] md:block hidden">
+                <li data-lucide="search" class="h-5"></li>
+              </span>
+            </div>
+          </nav>
+          <button
+            class="py-1.5 md:py-2 rounded md:rounded-lg flex justify-center bg-gray-950 hover:bg-gray-700"
+          >
+            <span><i data-lucide="log-out" class="md:hidden"></i></span
+            ><span class="hidden md:block">SignOut</span>
+          </button>
+        </aside>
+        <div
+          id="dashboardContent"
+          class="space-y-4 ml-12 md:ml-44 min-h-full flex flex-col w-full"
+        >
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-6 mt-6">
+            <div
+              class="flex items-center justify-center hover:scale-105 h-16 w-20 md:w-56 md:h-32 bg-gray-300 hover:bg-gray-400 transition-all rounded"
+            >
+              <a
+                href="videoPage.html"
+                class="border-2 border-black/20 hover:border-black/40 rounded-full p-2.5 hover:scale-110 transition-all"
+              >
+                <li data-lucide="play-circle" class="w-10 h-10 text-black"></li>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-center hover:scale-105 h-16 w-20 md:w-56 md:h-32 bg-gray-300 hover:bg-gray-400 transition-all rounded"
+            >
+              <a
+                href="videoPage.html"
+                class="border-2 border-black/20 hover:border-black/40 rounded-full p-2.5 hover:scale-110 transition-all"
+              >
+                <li data-lucide="play-circle" class="w-10 h-10 text-black"></li>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-center hover:scale-105 h-16 w-20 md:w-56 md:h-32 bg-gray-300 hover:bg-gray-400 transition-all rounded"
+            >
+              <a
+                href="videoPage.html"
+                class="border-2 border-black/20 hover:border-black/40 rounded-full p-2.5 hover:scale-110 transition-all"
+              >
+                <li data-lucide="play-circle" class="w-10 h-10 text-black"></li>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    lucide.createIcons();
+  </script>
+</html>
